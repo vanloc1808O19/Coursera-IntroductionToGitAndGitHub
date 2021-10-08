@@ -1,0 +1,39 @@
+--- Fraction_original.cpp	2021-10-07 10:55:16.773649900 +0700
++++ Fraction_fixed.cpp	2021-10-07 10:55:40.000000000 +0700
+@@ -22,8 +22,8 @@
+ 
+ //constructor with a given integer, in this case denominator will be 1 -> simplified form.
+ Fraction::Fraction(int givenInt) {
+-	this->m_numerator = 2 * givenInt;
+-	this->m_denominator = 2;
++	this->m_numerator = givenInt;
++	this->m_denominator = 1;
+ }
+ 
+ //copy constructor.
+@@ -37,20 +37,18 @@
+ 	b = abs(b);
+ 
+ 	//swap so that b is always not less than a.
+-	if (a > b) {
+-		int temp = a;
+-		a = b;
+-		b = temp;
++	if (a < b) {
++		return findGCD(b, a);
+ 	}
+ 
+-	if (a == 0) {
++	if (b == 0) {
+ 		return b;
+ 	}
+ 
+-	if (b % a == 0) {
++	if (a % b == 0) {
+ 		return a;
+ 	} 
+-	return findGCD(b % a, a);
++	return findGCD(b, a % b);
+ }
+ 
+ void Fraction::simplify() {
