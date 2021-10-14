@@ -9,7 +9,8 @@ int main() {
     std::cout << "Ii tenki desu ne\n";
     std::cout << "Samui desu ne\n";
     std::cout << "o-genki desu ka\n";
-    std::cout << "Arigatou gozaimsu\n";
+    std::cout << "Arigatou gozaimasu\n";
+    std::cout << "Arigatou gozamashita\n";
 
     return 0;
 }
