@@ -11,6 +11,7 @@ int main() {
     std::cout << "o-genki desu ka\n";
     std::cout << "Arigatou gozaimasu\n";
     std::cout << "Arigatou gozamashita\n";
+    std::cout << "Shitsurei shimasu\n";
 
     return 0;
 }
