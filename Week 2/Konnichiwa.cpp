@@ -12,6 +12,7 @@ int main() {
     std::cout << "Arigatou gozaimasu\n";
     std::cout << "Arigatou gozamashita\n";
     std::cout << "Shitsurei shimasu\n";
+    std::cout << "ABCDXYZ\n";
 
     return 0;
 }
