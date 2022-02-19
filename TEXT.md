@@ -1,2 +1,2 @@
-An empty file
+An empty file  
 Not empty anymore
