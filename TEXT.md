@@ -1,2 +1,3 @@
 An empty file  
-Not empty anymore
+Not empty anymore  
+Longer file
